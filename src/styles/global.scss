@@ -1,0 +1,116 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background-color: #e0e0e0; // Color de fondo general
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 15px; // Reduce el padding interno del formulario
+    background-color: #d1d0d0; // Fondo suave para el formulario
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; // Espacio debajo del formulario
+    width: 100%;
+    max-width: 400px; // Ancho máximo reducido para el formulario
+}
+
+h1 {
+    text-align: center;
+    color: #0b5f4a; // Color de texto
+    font-size: 30px; // Tamaño de texto un poco más pequeño
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; // Reduce el espaciado entre los elementos del formulario
+}
+
+input[type="text"], 
+textarea {
+    padding: 8px; // Reduce el relleno interno de los campos de texto
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; // Evita que el textarea sea redimensionable
+    font-size: 14px; // Tamaño de texto más pequeño para los campos
+}
+
+button[type="submit"] {
+    background-color: #0fb1a9; // Verde para el botón de agregar
+    color: white;
+    border: none;
+    padding: 8px 12px; // Botón más pequeño
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #03a098; // Cambio de color al pasar el ratón
+    }
+}
+
+
+.task-list {
+    padding: 20px;
+   
+    border-radius: 8px;
+    width: 100%; // Asegura que ocupe todo el ancho disponible
+    max-width: 1200px; // Ancho máximo para la lista de tareas
+}
+
+h1 {
+    text-align: center;
+    color: #333; // Color de texto
+}
+
+.task-grid {
+    display: grid; // Habilita el diseño de cuadrícula
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // Establece las columnas
+    gap: 20px; // Espacio entre las tareas
+    list-style-type: none; // Elimina los puntos de la lista
+    padding: 0; // Elimina el padding de la lista
+}
+
+.task-item {
+    background-color: #ffffff; // Fondo blanco para cada tarea
+    border: 1px solid #e0e0e0; // Bordes suaves
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra para un efecto de elevación
+    transition: transform 0.2s; // Animación suave al pasar el ratón
+
+    &:hover {
+        transform: scale(1.02); // Efecto de escala al pasar el ratón
+    }
+}
+
+
+// ButtonAtom.scss
+.button-atom {
+    list-style: none;
+    
+    button {
+      background-color: #0fb1a9; // Cambia el color al que prefieras
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    
+      &:hover {
+        background-color: #089b93; // Cambia el color para el hover
+      }
+    }
+  }
+  
